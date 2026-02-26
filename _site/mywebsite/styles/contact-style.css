@@ -1,0 +1,252 @@
+/* UWIN COLOR SCHEME:
+ * BLUE:
+ * #005596
+ *
+ * YELLOW:
+ * #FFCE00
+ *
+ * GREY:
+ * #58585B 
+ */
+
+:root {
+    --uwin-blue: #005596;
+    --uwin-yellow: #FFCE00;
+    --uwin-grey: #58585B;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    & > header, nav, footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    /* background-color: var(--uwin-blue); */
+    background-image: linear-gradient(to top, #004485 0%, #005596 100%);
+
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1000px;
+
+    }
+
+    & a, span {
+        color: var(--uwin-yellow);
+        text-decoration: none;
+    }
+}
+
+#header-l {
+    width: 20%;
+}
+
+#header-r {
+    display: flex;
+    justify-content: end;
+    /* align-items: center; */
+    width: 80%;
+    height: 100%;
+    /* margin: 5px; */
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 720px;
+    & > span {
+        font-weight: bold;
+    }
+    & > a, span {
+        display: flex;
+        align-items: center;
+        transition: 0.1s ease-in;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    & > a:hover {
+        background-color: #00000033;
+    }
+}
+
+.parallax {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-image: linear-gradient(to right, #0000 0%, #014 60%), url("../images/misc/parallax.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & > #parallax-text {
+        margin: auto 5vw 2vh auto;
+        font-size: 56px;
+        text-align: right;
+        color: var(--uwin-yellow);
+    }
+}
+
+#parallax-text > * {
+    margin: 0;
+}
+
+main {
+    background-color: #58585B;
+}
+
+#main-content {
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+    /* min-height: 1000px; */
+    
+    & > section {
+        margin: 20px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & > section:nth-child(odd) {
+        
+    }
+    & .main-text {
+        width: 60%;
+        margin: auto 10px;
+        /* background-color: red; */
+    }
+
+}
+
+#slideshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#slideshow-imgs {
+
+    padding: 10px;
+
+    & > * {
+        margin: auto;
+        height: 180px;
+    }
+}
+
+#slideshow-controls > *:not(:last-child) {
+    margin-right: 50px;
+}
+
+.ssCurrent {
+    /* display:block; */
+}
+
+footer {
+    background-color: var(--uwin-grey);
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 1000px;
+
+    }
+
+    & a {
+        color: var(--uwin-yellow);
+        text-decoration: none;
+        font-style: italic;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+#footer-l {
+    display: flex;
+    flex-direction: column;
+    
+    & > #footer-contact-us {
+        color: var(--uwin-yellow);
+        
+    }
+}
+
+#footer-r {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@keyframes headerFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.2;
+    }
+}
+
+@keyframes headerFadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.headerFadeOut {
+    animation: 0.5s headerFadeOut forwards;
+}
+
+.headerFadeIn {
+    animation: 0.5s headerFadeIn forwards;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+}
+
+.fadeOut {
+    animation: 0.5s fadeOut forwards;
+}
+

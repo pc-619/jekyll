@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 10.583333 10.583334"
+   height="40"
+   width="40">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-286.41665)"
+     id="layer1">
+    <g
+       transform="matrix(0.93117517,0,0,0.92283447,-0.62127816,23.486512)"
+       id="g4533">
+      <text
+         xml:space="preserve"
+         style="font-size:2.82222247px;line-height:1.25;font-family:NSimSun;-inkscape-font-specification:'NSimSun, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffce00;fill-opacity:1;stroke-width:0.26458335"
+         x="4.7321835"
+         y="294.53882"
+         id="text4520"><tspan
+           id="tspan4518"
+           x="4.7321835"
+           y="294.53882"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;font-family:Constantia;-inkscape-font-specification:'Constantia, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffce00;fill-opacity:1;stroke-width:0.26458335">i</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:2.82222247px;line-height:1.25;font-family:NSimSun;-inkscape-font-specification:'NSimSun, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.26458335"
+         x="8.1478519"
+         y="289.6936"
+         id="text4524"><tspan
+           id="tspan4522"
+           x="8.1478519"
+           y="292.47174"
+           style="stroke-width:0.26458335" /></text>
+      <ellipse
+         style="fill:none;fill-opacity:1;stroke:#ffce00;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4526"
+         cx="6.3500004"
+         cy="290.64999"
+         rx="5.4182191"
+         ry="5.4695282" />
+    </g>
+  </g>
+</svg>

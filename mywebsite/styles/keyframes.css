@@ -1,0 +1,119 @@
+@keyframes snavSlideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes snavSlideUp {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes headerFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.2;
+    }
+}
+
+@keyframes headerFadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateX(100%); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateX(0%); */
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes parallaxTextFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes infiniRotate {
+    from {
+        transform: rotateY(0deg);
+        filter: sepia(1) hue-rotate(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+        filter: sepia(10) hue-rotate(360deg);
+    }
+}
+
+.headerFadeOut {
+    animation: 0.5s headerFadeOut forwards;
+}
+
+.headerFadeIn {
+    animation: 0.5s headerFadeIn forwards;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+}
+
+.fadeOut {
+    animation: 0.5s fadeOut forwards;
+}
+
+.clickFadeOut {
+    animation: 0.5s fadeOut;
+}
+
+.parallaxTextFadeIn {
+    animation: 2.5s parallaxTextFadeIn forwards;
+}
+
+.infiniRotate {
+    transition: transform 2s ease-in-out infinite;
+}
+
+.infiniRotate:hover {
+    transform: rotateY(360deg);
+    filter: sepia(10) hue-rotate(360deg);
+}
+
+.snavSlideDown {
+    animation: 0.5s snavSlideDown forwards;
+}
+
+.snavSlideUp {
+    animation: 0.5s snavSlideUp forwards;
+}
