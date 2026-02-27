@@ -1,0 +1,3 @@
+title: My Website
+markdown: kramdown
+permalink: /blog/:title/
