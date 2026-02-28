@@ -951,6 +951,29 @@ p:not(.tl > *) {
     }
 }
 
+/* BLOG */
+
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.blog-post h1 {
+  font-size: 2.5rem;
+}
+
+.blog-date {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.blog-content p {
+  line-height: 1.8;
+}
+
+/* MEDIA QUERIES */
+
 @media (min-width: 951px) {
     #sm-navbar {
         display: none;
