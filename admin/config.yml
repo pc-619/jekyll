@@ -11,7 +11,7 @@ collections:
     folder: "blog"
     create: true
     slug: "{{slug}}"
-    extension: "md"
+    extension: "html"
     format: "frontmatter"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
