@@ -110,13 +110,14 @@
                 <button onclick="revealVersionInfo()">?</button>
             </div>
 
-            <main class="blog-post">
+            <div class="blog-post">
                 <h1>{{ page.title }}</h1>
                 <p class="blog-date">{{ page.date | date: "%B %d, %Y" }}</p>
 
                 <div class="blog-content">
-                {{ content }}
+                {{ content | markdownify }}
                 </div>
+            </div>
         </div>
     </main>
     <footer>

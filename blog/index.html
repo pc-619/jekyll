@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Blog
 ---
 
@@ -27,8 +26,8 @@ title: Blog
             
             <div id="header-r">
                 <nav id="navbar">
-                    <span>Home</span>
-                    <a href="/community_support.html">Community Support</a>
+                    <a href="/index.html">Home</a>
+                    <span>Blog</span>
                     <a href="/aboutus.html">About Us</a>
                     <a href="/sponsors.html">Sponsors</a>
                     <a href="/contact.html">Contact</a>
@@ -115,16 +114,19 @@ title: Blog
                 <button onclick="revealVersionInfo()">?</button>
             </div>
 
-            <ul>
-            {% assign blog_pages = site.pages | where_exp: "page", "page.path contains 'blog/' and page.name != 'index.html'" | sort: "date" | reverse %}
-
-            {% for page in blog_pages %}
-                <li>
-                <a href="{{ page.url }}">{{ page.title }}</a>
-                <small>{{ page.date | date: "%B %d, %Y" }}</small>
-                </li>
-            {% endfor %}
-            </ul>
+            <div id="blogEntryList">
+                <ul>
+                {% assign blog_pages = site.pages | where_exp: "page", "page.path contains 'blog/' and page.name != 'index.html'" | sort: "date" | reverse %}
+    
+                {% for page in blog_pages %}
+                    <li>
+                    <a href="{{ page.url }}">{{ page.title }}</a><br>
+                    <small><em>{{ page.date | date: "%B %d, %Y" }}</em></small><br>
+                    <small>{{ page.content | markdownify | strip_html | truncatewords: 30 }}</small>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
         </div>
     </main>
     <footer>
@@ -150,7 +152,6 @@ title: Blog
 
         </div>
     </footer>
-    <script src="/js/slideshow.js"></script>
     <script src="/js/fouc-remedy.js"></script>
     <script src="/js/SNav.js"></script>
     <script src="/js/onomatopoeic-click.js"></script>
