@@ -23,7 +23,7 @@
             <div id="header-r">
                 <nav id="navbar">
                     <a href="index.html">Home</a>
-                    <a href="community_support.html">Community Support</a>
+                    <a href="/blog/index.html">Blog</a>
                     <a href="aboutus.html">About Us</a>
                     <a href="sponsors.html">Sponsors</a>
                     <span>Contact</span>
@@ -42,11 +42,12 @@
         </div>
     </header>
     <div id="header-notifs">
-        <marquee behavior="scroll" direction="left">This marquee is an experimental feature -- if you want to broadcast minute, crucial headers on your site, this would be one way about it. Other ways include a 'newsbox' aside the screen, a dedicated blog page, etc.</marquee>
+        <div id="header-trim"></div>
+        <!-- <marquee behavior="scroll" direction="left">This marquee is an experimental feature -- if you want to broadcast minute, crucial headers on your site, this would be one way about it. Other ways include a 'newsbox' aside the screen, a dedicated blog page, etc.</marquee> -->
     </div>
     <div id="sm-navbar" style="visibility: hidden">
         <a href="index.html">Home</a>
-        <a href="community_support.html">Community Support</a>
+        <a href="/blog/index.html">Blog</a>
         <a href="aboutus.html">About Us</a>
         <a href="sponsors.html">Sponsors</a>
         <span>Contact</span>
@@ -111,6 +112,9 @@
             <div id="version-button">
                 <button onclick="revealVersionInfo()">?</button>
             </div>
+
+            <div class="text-here-smile" style="display: flex; justify-content: center; width: 35%; background-color: #00f1; border: 2px solid #0085; border-radius: 10px; padding: 10px;">"Have any questions? Want to join? Want to sponsor us? Contact us!</div>
+
             <form id="contact-form">
                 <div class="form-component form-name">
                     <label for="name">Name:</label>

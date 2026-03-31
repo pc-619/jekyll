@@ -381,16 +381,17 @@ header {
     justify-content: center;
     align-items: end;
     position: fixed;
-    top: 60px;
+    top: 64px;
     right: 0;
     background-color: var(--uwin-yellow);
     box-shadow: inset 0em 0em 3em #0002;
     border: 1px solid #AA7900;
     border-top: 0;
-    z-index: 11;
+    z-index: 5;
     
     width:max-content;
     padding: 0 0 0 10px;
+    font-size: 2em;
 
     & > span {
         font-weight: bold;
@@ -420,6 +421,11 @@ header {
     }
 }
 
+#header-trim {
+    background-color: #ff0;
+    height: 4px;
+}
+
 .parallax {
     display: flex;
     justify-content: end;
@@ -443,7 +449,7 @@ header {
 
 #parallax-text {
     margin: auto 5vw 15vh 5vw;
-    font-size: 54px;
+    font-size: 35px;
     text-align: right;
     /* color: var(--uwin-yellow); */
 }
@@ -451,6 +457,12 @@ header {
 #parallax-text > * {
     margin: 0;
     color: var(--uwin-yellow);
+}
+#parallax-text > img {
+    height: 200px;
+    width: auto;
+    border: 0;
+    box-shadow: none;
 }
 /* note: maybe #363636 over #DDD for main bg color */
 main {
@@ -474,6 +486,7 @@ main {
         align-items: center;
         & > * {
             margin: auto;
+            font-size: 18px;
         }
         & > :not(.main-text) {
             margin: 20px;
@@ -488,18 +501,22 @@ main {
     }
     & > section:nth-child(odd) {
         flex-direction: row-reverse;
-        background-color: #0002;
-        box-shadow: 0px 0px 120px 125px #0002;
+        /* background-color: #0002; */
+        /* box-shadow: 0px 0px 120px 125px #0002; */
         /* & > * {
             margin-right: auto;
             margin-left: 0;
         } */
     }
     & .main-text {
+        /* height: 100%; */
         width: 50%;
         padding: 0 10px;
-        /* margin: auto 10px; */
-        /* background-color: red; */
+        /* border: 1px solid #1115;
+        border-radius: 10px;
+        background-color: #1112;
+        box-shadow: 0px 0px 5px 1px #0003; */
+        margin: auto 10px;
     }
     & #index-sec5 > .main-text {
         width: 50%;
@@ -692,8 +709,8 @@ footer {
 
     & a {
         color: var(--uwin-yellow);
-        text-decoration: none;
-        font-style: italic;
+        /* text-decoration: none; */
+        /* font-style: italic; */
     }
     & a:hover {
         text-decoration: underline;
@@ -703,11 +720,11 @@ footer {
 #footer-l {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 30%;
     margin: 0 auto auto auto;
     & > #footer-contact-us {
-        color: var(--uwin-yellow);
-        
+        color: #DDD;
+        /* font-size: .5em; */
     }
 }
 
@@ -717,7 +734,7 @@ footer {
     justify-content: end;
     flex-wrap: wrap;
     gap: 20;
-    width: 80%;
+    width: 70%;
     margin: auto;
     & > * {
         margin: auto 10px;
@@ -992,6 +1009,13 @@ p:not(.tl > *) {
     }
 }
 
+.text-here-smile {
+    background-color: #00f;
+    min-height: 50px;
+    width: 60%;
+    margin: 25px auto;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 951px) {
@@ -1037,7 +1061,11 @@ p:not(.tl > *) {
         justify-content: center;
         align-items: center;
         margin: auto 1vw auto auto;
+        & :hover {
+            cursor: pointer;
+        }
     }
+
     /* #sm-navbar {
         display: none;
     } */
@@ -1073,7 +1101,7 @@ p:not(.tl > *) {
         & h3, p {
             text-align: center;
             line-height: 1;
-            font-size: 3em;
+            font-size: 2em;
         }
         & .logo {
             width: 100%;
@@ -1091,8 +1119,11 @@ p:not(.tl > *) {
         position: relative;
         bottom: 35px;
         margin: auto 5vw 10vh 5vw;
-        font-size: 2em;
+        font-size: 25px;
         text-align: right;
         /* color: var(--uwin-yellow); */
+    }
+    #parallax-text > img {
+        height: 120px;
     }
 }

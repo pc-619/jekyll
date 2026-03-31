@@ -1,0 +1,31 @@
+TODO (in order):
+- swap "Community Support" for "Blog" in header DONE
+  - include sm-navbar too DONE
+- verify blog works; create 1-2 posts. be mindful of 20-deploy-per-month limit DONE
+- polish Contact form
+- review layout for Index; consider something new to show content; poll for advice(?)
+  - CONSIDER: revamping sections into one big 2*X grid, to line up divs vertically
+- review layout for entire site; see what can be improved upon
+- remove marquee in ALL pages
+
+- CONSIDER: button that smooth-scrolls down to content on landing page
+
+BLOG FORMATTING:
+- change h1 so it doesnt overlap w/ title format
+- cant put my finger on it but make it look cleaner (BLOG ENTRY)
+- polish BLOG ENTRY LIST page (consider tiled list vs. trad. list?) (increase font size, change col to #DDD)
+
+- REMOVE EDITED IMAGE BEFORE CONTINUING!!!!!!!!!!!
+
+- TURN ON ACTIVE BUILDS BEFORE CONTINUING!!!!!!!!!
+
+- if everything is good enough, deploy to netlify and notify club
+
+- change emailjs template CSS at later time
+  - add Subject field to form
+  - add blurb to top of form encouraging students to ask to join club (provide reaasons 2 contact)
+
+FORM:
+
+
+* can only access blog thru JEKYLL or NETLIFY host (i think  jekyll format is culprit)

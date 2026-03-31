@@ -17,16 +17,16 @@
     <header id="header">
         <div>
             <div id="header-l">
-                <img src="images/logos/FE Logo Updated Yellow.png" height="55">
+                <img src="images/logos/FE Logo Updated Yellow No Title.png" height="55">
             </div>
             
             <div id="header-r">
                 <nav id="navbar">
                     <span>Home</span>
-                    <a href="community_support.html">Community Support</a>
-                    <a href="aboutus.html">About Us</a>
-                    <a href="sponsors.html">Sponsors</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="/blog/index.html">Blog</a>
+                    <a href="/aboutus.html">About Us</a>
+                    <a href="/sponsors.html">Sponsors</a>
+                    <a href="/contact.html">Contact</a>
                 </nav>
                 <div id="sm-navbar-icon">
                     <img src="images/misc/menu.svg" alt="" height="32" onclick="SNavMenu()">
@@ -37,7 +37,8 @@
 
     </header>
     <div id="header-notifs">
-        <marquee behavior="scroll" direction="left">This marquee is an experimental feature -- if you want to broadcast minute, crucial headers on your site, this would be one way about it. Other ways include a 'newsbox' aside the screen, a dedicated blog page, etc.</marquee>
+        <div id="header-trim"></div>
+        <!-- <marquee behavior="scroll" direction="left">This marquee is an experimental feature -- if you want to broadcast minute, crucial headers on your site, this would be one way about it. Other ways include a 'newsbox' aside the screen, a dedicated blog page, etc.</marquee> -->
     </div>
     <div id="sm-navbar" style="visibility: hidden">
         <span>Home</span>
@@ -51,7 +52,8 @@
         <!-- TODO: re-crop parallax image to center canada flag -->
         <div class="parallax">
             <div id="parallax-text">
-                <h1 class="parallaxTextFadeIn">UWindsor FSAE</h1>
+                <!-- <h1 class="parallaxTextFadeIn">UWindsor FSAE</h1> -->
+                <img class="parallaxTextFadeIn" src="images/logos/FE Logo Updated Yellow.png">
                 <h6 class="parallaxTextFadeIn">An eye-catching slogan.</h6>
             </div>
         </div>
@@ -128,7 +130,8 @@
                 <img src="images/misc/IMG_7255.jpg" alt="">
                 <div class="main-text">
                     <h2>Sponsorships</h2>
-                    <p>Become a vital part of our mission to educate, inspire, and transform the future of engineering and mobility. Join us in making a difference on and off the track, with benefits including brand exposure on our car, apparel, and social media. Contact us at fsae@uwindsor.ca to review our sponsorship package.</p>
+                    <p>Become a vital part of our mission to educate, inspire, and transform the future of engineering and mobility. Join us in making a difference on and off the track, with benefits including brand exposure on our car, apparel, and social media. To review our sponsorship package:<br><br></p>
+                    <a class="learn-more-button" href="contact.html">Contact Us</a>
                 </div>
             </section>
 
@@ -141,7 +144,7 @@
                 <img class="logo" src="images/logos/FE Logo Updated Yellow.png" width="200">
                 <div id="footer-contact-us">
                     <p style="font-weight: bold;">Interested?</p>
-                    <p>Reach out through the form below.<br><br>
+                    <p>Reach out through the form below.<br>
                     
                         <a href="contact.html#contact-form">Link to contact form</a>
                     </p>
@@ -158,7 +161,7 @@
 
         </div>
     </footer>
-    <script src="js/slideshow.js"></script>
+    <!-- <script src="js/slideshow.js"></script> -->
     <script src="js/fouc-remedy.js"></script>
     <script src="js/SNav.js"></script>
     <script src="js/onomatopoeic-click.js"></script>
