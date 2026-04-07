@@ -1,6 +1,6 @@
 ---
 layout: post
-title: January Updates!
+title: January 2026 Updates!
 date: 2026-01-31T00:00:00.000-05:00
 ---
 
