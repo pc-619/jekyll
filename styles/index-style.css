@@ -334,9 +334,9 @@ header {
     display: flex;
     height: 60px;
     margin-left: 10px;
-    & > img {
+    & > a img {
         margin: auto auto auto 10px;
-        height: 80%;
+        height: 100%;
     }
 }
 
@@ -1098,7 +1098,7 @@ p:not(.tl > *) {
             margin-bottom: 2vh;
             & > a {
                 margin-bottom: 0;
-                color: var(--uwin-yellow);
+                color: #DDD;
                 font-weight: 900;
                 /* line-height: 1.5; */
                 font-size: 2em;
@@ -1106,6 +1106,7 @@ p:not(.tl > *) {
             }
             & > a:hover {
                 text-decoration: underline;
+                color: var(--uwin-yellow);
             }
             & > small {
                 margin-top: 0;

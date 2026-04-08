@@ -1,15 +1,35 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Admin</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
         CMS.registerPreviewStyle("/styles/admin-preview.css");
     </script>
-  </body>
+    <script>
+    CMS.registerPreviewTemplate("blog", ({ entry, widgetFor }) => {
+        const title = entry.getIn(["data", "title"]);
+        const rawDate = entry.getIn(["data", "date"]);
+
+        const date = rawDate
+        ? new Date(rawDate).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+            })
+        : "";
+
+        return h("div", { className: "blog-post" }, [
+        h("h1", { className: "blog-title" }, title || ""),
+        h("p", { className: "blog-date" }, date),
+        h("div", { className: "blog-content" }, widgetFor("body"))
+        ]);
+    });
+    </script>
+</body>
 </html>

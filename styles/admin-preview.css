@@ -6,7 +6,11 @@ body {
   font-family: Bahnschrift, Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
-h1 {
+* {
+    font-size: 20px;
+}
+
+/* h1 {
     color: #FFCE00 !important;
 }
 
@@ -16,4 +20,114 @@ h2, h3, h4, h5, h6 {
 
 img {
     max-width: 150px;
+} */
+
+.frame-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 0 60px;
+    & > .blog-title {
+        white-space: normal;    
+        overflow-wrap: break-word;
+        font-size: 56px;
+        margin-top: 30px;
+        color: #ffce00;
+    }
+    & > .blog-date {
+        align-self: start;
+    }
+    & > .blog-content {
+    }
+    & h1, h2, h3, h4, h5, h6 {
+        margin: 24px 0 12px;
+    }
+    & h1 {
+        font-size: 42px;
+    }
+    & h2 {
+        font-size: 32px;
+    }
+    & h3 {
+        font-size: 24px;
+    }
+    /* & > p {
+        margin: 0 !important;
+    } */
+    & a {
+        color: #ffce00;
+    }
+    & li {
+        font-size: 20px;
+    }
+    & blockquote {
+        border-left: 2px solid #ffce00;
+        margin-left: 20px;
+        /* background-color: #111; */
+        padding: 10px;
+        font-style: italic;
+    }
+    & code {
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        min-width: 200px;
+        background-color: #111;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    & pre.highlight {
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: #111;
+        font-weight: bold;
+        padding: 10px;
+        & * {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+        }
+    }
+    & .kd, .nf {color: #9097f7;}
+    & .nx {color: #b4b9fc;}
+    & .p {color: #ffce00;}
+    & .k {color: #9044a3;}
+    & .mi {color: #49ffb3;}
+    & img {
+        display: flex;
+        margin: 16px auto;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 680px;
+        /* aspect-ratio: 1; */
+    }
+    & dt {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    & table {
+        border-collapse: collapse;
+        font-size: 20px;
+        background-color: #222;
+    }
+    & td, th {
+        border: 1px solid #333;
+        padding: 8px;
+    }
+    & tr:nth-child(even) {
+        background-color: #333;
+    }
+    & abbr {
+        text-decoration: none;
+        /* padding: 0 0 1px 0; */
+        border-bottom: 2px dotted #ffce00;
+    }
+    & .footnotes > ol > li > * {
+        margin: 0;
+    }
 }
