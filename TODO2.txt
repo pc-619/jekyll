@@ -1,0 +1,31 @@
+CONTENT:
+- finish up Contact page
+- tweak Blog formatting
+- tweak Blog image handling (make embedded images look nice on all devices)
+- fix Sponsor img misalignment on Firefox browsers
+
+SEO:
+- research good SEO practices
+- look up "sitemap" and "robots.txt"
+- look up "Google Search Console"
+
+ANALYTICS:
+- consider "Google Analytics", may not be necessary given site purposes
+
+SECURITY:
+- research practices for privacy policies; ToS
+- look into spam protection for forms (e.g. honeypot, CAPTCHA)
+
+ACCESSIBILITY:
+- audit site using "Lighthouse"
+
+CUSTOM DOMAIN:
+- see if "uwindsorfsae.ca" is available for a good price
+- change favicon to something more applicable (F1 != FSAE)
+- look up "set up redirects"
+
+BACKUPS:
+- look into Netlify rollback capability (may not be necessary)
+
+BEFORE CONSIDERING COMPLETE:
+- vet it with chosen users for feedback

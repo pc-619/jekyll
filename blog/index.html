@@ -21,7 +21,7 @@ title: Blog
     <header id="header">
         <div>
             <div id="header-l">
-                <img src="/images/logos/FE Logo Updated Yellow.png" height="55">
+                <img src="/images/logos/FE Logo Updated Yellow No Title.png" height="55">
             </div>
             
             <div id="header-r">
@@ -54,14 +54,14 @@ title: Blog
 
     <main class="indexMain">
         <!-- TODO: re-crop parallax image to center canada flag -->
-        <div class="parallax">
+        <div class="parallax blog">
             <div id="parallax-text">
-                <h1 class="parallaxTextFadeIn">UWindsor FSAE</h1>
-                <h6 class="parallaxTextFadeIn">An eye-catching slogan.</h6>
+                <h1 class="parallaxTextFadeIn">Blog</h1>
+                <a id="call-to-scroll" href="#top-anchor"><img src="/images/misc/down.svg">Click to scroll down</a>
             </div>
         </div>
         <div id="main-content">
-            <div id="version-screen">
+            <!-- <div id="version-screen">
                 <div id="version-info">
                     <div id="version-title">
                         <h1>Version Info</h1>
@@ -113,8 +113,9 @@ title: Blog
             </div>
             <div id="version-button">
                 <button onclick="revealVersionInfo()">?</button>
-            </div>
+            </div> -->
 
+            <div id="top-anchor"></div>
             <div id="blogEntryList">
                 <ul>
                 {% assign blog_pages = site.pages | where_exp: "page", "page.path contains 'blog/' and page.name != 'index.html'" | sort: "date" | reverse %}
@@ -130,6 +131,7 @@ title: Blog
             </div>
         </div>
     </main>
+    <div id="header-trim"></div>
     <footer>
         <div>
             <div id="footer-l">
@@ -138,24 +140,25 @@ title: Blog
                     <p style="font-weight: bold;">Interested?</p>
                     <p>Reach out through the form below.<br><br>
                     
-                        <a href="/contact.html#contact-form">Link to contact form</a>
+                        <a href="/contact.html#top-anchor">Link to contact form</a>
                     </p>
                 </div>
             </div>
             
             <div id="footer-r">
                 <img src="/images/sponsors/charge.png" alt="" width="250">
-                <img src="/images/sponsors/dti-logo-dark_bicolor.svg" alt="" width="250">
+                <img src="/images/sponsors/integrity.png" alt="" width="250">
+                <img src="/images/sponsors/engsoc.png" alt="" width="250">
                 <img src="/images/sponsors/medalogoglow.png" alt="" width="250">
-                <img src="/images/sponsors/enwin.png" alt="" width="250">
-                <img src="/images/sponsors/RLS_black90_CMYK.png" alt="" width="250">
+                <img src="/images/sponsors/ghf.png" alt="" width="250">
+                <img src="/images/sponsors/ansys.png" alt="" width="250">
             </div>
 
         </div>
     </footer>
     <script src="/js/fouc-remedy.js"></script>
     <script src="/js/SNav.js"></script>
-    <script src="/js/onomatopoeic-click.js"></script>
-    <script src="/js/notice.js"></script>
+    <!-- <script src="/js/notice.js"></script> -->
+    <script src="/js/parallax-button.js"></script>
 </body>
 </html>

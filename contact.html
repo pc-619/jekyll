@@ -17,7 +17,7 @@
     <header id="header">
         <div>
             <div id="header-l">
-                <img src="images/logos/FE Logo Updated Yellow.png" height="55">
+                <img src="/images/logos/FE Logo Updated Yellow No Title.png" height="55">
             </div>
             
             <div id="header-r">
@@ -33,17 +33,10 @@
                 </div>
             </div>
 
-            <!-- <div id="header-r">
-                
-                <div class="news-item">Capital Punishment Returns, Exclusive to MATH-3XXX Instructors Whose Name Starts With 'T'</div>
-                <div class="news-item">New Driver Selected: Daring Web-Dev Stud Wows Team With G-Class-Worthy Skills</div>
-                <div class="news-item">See More</div>
-            </div> -->
         </div>
     </header>
     <div id="header-notifs">
         <div id="header-trim"></div>
-        <!-- <marquee behavior="scroll" direction="left">This marquee is an experimental feature -- if you want to broadcast minute, crucial headers on your site, this would be one way about it. Other ways include a 'newsbox' aside the screen, a dedicated blog page, etc.</marquee> -->
     </div>
     <div id="sm-navbar" style="visibility: hidden">
         <a href="index.html">Home</a>
@@ -53,13 +46,14 @@
         <span>Contact</span>
     </div>
     <main>
-        <div class="parallax">
+        <div class="parallax contactParallaxImg">
             <div id="parallax-text">
                 <h1 class="parallaxTextFadeIn">Contact</h1>
+                <a id="call-to-scroll" href="#top-anchor"><img src="images/misc/down.svg">Click to scroll down</a>
             </div>
         </div>
         <div id="main-content">
-            <div id="version-screen">
+            <!-- <div id="version-screen">
                 <div id="version-info">
                     <div id="version-title">
                         <h1>Version Info</h1>
@@ -111,9 +105,10 @@
             </div>
             <div id="version-button">
                 <button onclick="revealVersionInfo()">?</button>
-            </div>
+            </div> -->
 
-            <div class="aboutus-text">
+            <div id="top-anchor"></div>
+            <div class="contact-text">
                 <p>Passionate about engineering or motorsports? Join our Formula SAE team and get hands-on experience building a race car! Contact us through the form on our website to get involved.
                 </p>
             </div>
@@ -135,6 +130,7 @@
             </form>
         </div>
     </main>
+    <div id="header-trim"></div>
     <footer>
         <div>
             <div id="footer-l">
@@ -143,17 +139,18 @@
                     <h3>Interested?</h3>
                     <p>Reach out through the form below.<br><br>
                     
-                        <a href="#">Link to Google Form</a>
+                        <a href="/contact.html#top-anchor">Link to Google Form</a>
                     </p>
                 </div>
             </div>
             
             <div id="footer-r">
                 <img src="images/sponsors/charge.png" alt="" width="250">
-                <img src="images/sponsors/dti-logo-dark_bicolor.svg" alt="" width="250">
+                <img src="images/sponsors/integrity.png" alt="" width="250">
+                <img src="images/sponsors/engsoc.png" alt="" width="250">
                 <img src="images/sponsors/medalogoglow.png" alt="" width="250">
-                <img src="images/sponsors/enwin.png" alt="" width="250">
-                <img src="images/sponsors/RLS_black90_CMYK.png" alt="" width="250">
+                <img src="images/sponsors/ghf.png" alt="" width="250">
+                <img src="images/sponsors/ansys.png" alt="" width="250">
             </div>
 
         </div>
@@ -161,7 +158,6 @@
     <!-- <script src="js/slideshow.js"></script> -->
     <script src="js/fouc-remedy.js"></script>
     <script src="js/SNav.js"></script>
-    <script src="js/onomatopoeic-click.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
     (function () {
@@ -184,6 +180,7 @@
         );
         });
     </script>
-    <script src="js/notice.js"></script>
+    <!-- <script src="js/notice.js"></script> -->
+    <script src="js/parallax-button.js"></script>
 </body>
 </html>

@@ -17,13 +17,13 @@
     <header id="header">
         <div>
             <div id="header-l">
-                <img src="/images/logos/FE Logo Updated Yellow.png" height="55">
+                <img src="/images/logos/FE Logo Updated Yellow No Title.png" height="55">
             </div>
             
             <div id="header-r">
                 <nav id="navbar">
-                    <span>Home</span>
-                    <a href="/community_support.html">Community Support</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/blog/index.html">Blog</a>
                     <a href="/aboutus.html">About Us</a>
                     <a href="/sponsors.html">Sponsors</a>
                     <a href="/contact.html">Contact</a>
@@ -37,26 +37,19 @@
 
     </header>
     <div id="header-notifs">
-        <marquee behavior="scroll" direction="left">This marquee is an experimental feature -- if you want to broadcast minute, crucial headers on your site, this would be one way about it. Other ways include a 'newsbox' aside the screen, a dedicated blog page, etc.</marquee>
+        <div id="header-trim"></div>
     </div>
     <div id="sm-navbar" style="visibility: hidden">
-        <span>Home</span>
-        <a href="/community_support.html">Community Support</a>
+        <a href="/index.html">Home</a>
+        <a href="/blog/index.html">Blog</a>
         <a href="/aboutus.html">About Us</a>
         <a href="/sponsors.html">Sponsors</a>
         <a href="/contact.html">Contact</a>
     </div>
 
-    <main class="indexMain">
-        <!-- TODO: re-crop parallax image to center canada flag -->
-        <div class="parallax">
-            <div id="parallax-text">
-                <h1 class="parallaxTextFadeIn">UWindsor FSAE</h1>
-                <h6 class="parallaxTextFadeIn">An eye-catching slogan.</h6>
-            </div>
-        </div>
+    <main class="postMain">
         <div id="main-content">
-            <div id="version-screen">
+            <!-- <div id="version-screen">
                 <div id="version-info">
                     <div id="version-title">
                         <h1>Version Info</h1>
@@ -108,18 +101,24 @@
             </div>
             <div id="version-button">
                 <button onclick="revealVersionInfo()">?</button>
-            </div>
+            </div> -->
+
+            <div id="blog-nav"><a href="/blog/index.html">Blog</a> > {{ page.title }}</div>
 
             <div class="blog-post">
-                <h1>{{ page.title }}</h1>
+                <h1 class="blog-title">{{ page.title }}</h1>
                 <p class="blog-date">{{ page.date | date: "%B %d, %Y" }}</p>
 
                 <div class="blog-content">
                 {{ content | markdownify }}
                 </div>
             </div>
+
+            <div id="blog-nav"><a href="/blog/index.html">Blog</a> > {{ page.title }}</div>
+
         </div>
     </main>
+    <div id="header-trim"></div>
     <footer>
         <div>
             <div id="footer-l">
@@ -128,25 +127,24 @@
                     <p style="font-weight: bold;">Interested?</p>
                     <p>Reach out through the form below.<br><br>
                     
-                        <a href="/contact.html#contact-form">Link to contact form</a>
+                        <a href="/contact.html#top-anchor">Link to contact form</a>
                     </p>
                 </div>
             </div>
             
             <div id="footer-r">
                 <img src="/images/sponsors/charge.png" alt="" width="250">
-                <img src="/images/sponsors/dti-logo-dark_bicolor.svg" alt="" width="250">
+                <img src="/images/sponsors/integrity.png" alt="" width="250">
+                <img src="/images/sponsors/engsoc.png" alt="" width="250">
                 <img src="/images/sponsors/medalogoglow.png" alt="" width="250">
-                <img src="/images/sponsors/enwin.png" alt="" width="250">
-                <img src="/images/sponsors/RLS_black90_CMYK.png" alt="" width="250">
+                <img src="/images/sponsors/ghf.png" alt="" width="250">
+                <img src="/images/sponsors/ansys.png" alt="" width="250">
             </div>
 
         </div>
     </footer>
-    <script src="/js/slideshow.js"></script>
     <script src="/js/fouc-remedy.js"></script>
     <script src="/js/SNav.js"></script>
-    <script src="/js/onomatopoeic-click.js"></script>
-    <script src="/js/notice.js"></script>
+    <!-- <script src="/js/notice.js"></script> -->
 </body>
 </html>
