@@ -1,8 +1,9 @@
 CONTENT:
 - finish up Contact page
-- tweak Blog formatting
-- tweak Blog image handling (make embedded images look nice on all devices)
-- fix Sponsor img misalignment on Firefox browsers
+- tweak Blog formatting DONE
+- tweak Blog image handling (make embedded images look nice on all devices) DONE
+- fix Sponsor img misalignment on Firefox browsers DONE
+- come up with nicer way to display sponsors on Sponsor page *for mobile devices*
 
 SEO:
 - research good SEO practices
@@ -17,15 +18,13 @@ SECURITY:
 - look into spam protection for forms (e.g. honeypot, CAPTCHA)
 
 ACCESSIBILITY:
-- audit site using "Lighthouse"
-
-CUSTOM DOMAIN:
-- see if "uwindsorfsae.ca" is available for a good price
-- change favicon to something more applicable (F1 != FSAE)
-- look up "set up redirects"
+- audit site using "Lighthouse" 
 
 BACKUPS:
 - look into Netlify rollback capability (may not be necessary)
 
 BEFORE CONSIDERING COMPLETE:
 - vet it with chosen users for feedback
+
+- add link to homepage from header logo icon
+- fix inconsistencies with headline colors
