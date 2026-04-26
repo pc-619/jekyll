@@ -1104,6 +1104,11 @@ p:not(.tl > *) {
     & > ul {
         list-style-type: none;
         & > li {
+            padding: 10px;
+            background-color: #1B1B1B;
+            border: 1px solid #333;
+            border-radius: 10px;
+
             margin-bottom: 2vh;
             & > a {
                 margin-bottom: 0;
@@ -1112,6 +1117,7 @@ p:not(.tl > *) {
                 /* line-height: 1.5; */
                 font-size: 2em;
                 text-decoration: none;
+                transition: color 0.4s ease;
             }
             & > a:hover {
                 text-decoration: underline;
@@ -1122,6 +1128,9 @@ p:not(.tl > *) {
                 color: #AAA;
                 font-weight: 100;
             }
+        }
+        & > li:hover a {
+            color: var(--uwin-yellow);
         }
     }
 }
