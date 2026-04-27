@@ -7,6 +7,17 @@ kramdown:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      image: "/assets/default-og.jpg"
+
+excerpt_separator: "<!--more-->"
+
+url: "https://uwindsorfsae.ca"
 
 permalink: /blog/:title/
