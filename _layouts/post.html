@@ -6,12 +6,22 @@
     <link rel="stylesheet" href="/styles/index-style.css">
     <link rel="stylesheet" href="/styles/keyframes.css">
     <link rel="icon" href="/images/favicon/favicon.svg" type="image/svg+xml">
-    <title>UWin FSAE</title>
     <style>
         body {
             visibility: hidden;
         }
     </style>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+
+    <!-- Open Graph (for social media) -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | default: page.content | strip_html | normalize_whitespace | truncate: 160 }}">
+    <meta property="og:image" content="/images/misc/blog-post-cover.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
 </head>
 <body>
     <header id="header">

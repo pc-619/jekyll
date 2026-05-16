@@ -4,5 +4,20 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: true
-  
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      image: "/assets/default-og.jpg"
+
+excerpt_separator: "<!--more-->"
+
+url: "https://uwindsorfsae.ca"
+
 permalink: /blog/:title/
