@@ -1026,13 +1026,13 @@ p:not(.tl > *) {
         margin: 24px 0 12px;
     }
     & h1 {
-        font-size: 42px;
+        font-size: 42px !important;
     }
     & h2 {
-        font-size: 32px;
+        font-size: 32px !important;
     }
     & h3 {
-        font-size: 24px;
+        font-size: 24px !important;
     }
     /* & > p {
         margin: 0 !important;
