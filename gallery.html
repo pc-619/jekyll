@@ -11,14 +11,14 @@
             visibility: hidden;
         }
     </style>
-    <title>About Us | UWindsor FSAE</title>
-    <meta name="description" content="Read more about UWindsor FSAE's history and what drives us to succeed.">
-    <link rel="canonical" href="https://uwindsorfsae.ca/aboutus">
-    <meta property="og:title" content="About Us | UWindsor FSAE">
-    <meta property="og:description" content="Read more about UWindsor FSAE's history and what drives us to succeed.">
+    <title>Gallery | UWindsor FSAE</title>
+    <meta name="description" content="View UWindsor FSAE's image gallery documenting their illustrious history.">
+    <link rel="canonical" href="https://uwindsorfsae.ca/contact">
+    <meta property="og:title" content="Contact | UWindsor FSAE">
+    <meta property="og:description" content="Contact UWindsor FSAE for sponsor inquiries and recruitment.">
     <meta property="og:image" content="https://uwindsorfsae.ca/images/misc/blog-post-cover.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uwindsorfsae.ca/aboutus">
+    <meta property="og:url" content="https://uwindsorfsae.ca/contact">
     <meta name="robots" content="index, follow">
 </head>
 <body>
@@ -34,15 +34,16 @@
                 <nav id="navbar">
                     <a href="index.html">Home</a>
                     <a href="/blog/index.html">Blog</a>
-                    <span>About Us</span>
+                    <a href="aboutus.html">About Us</a>
                     <a href="sponsors.html">Sponsors</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="/gallery.html">Gallery</a>
+                    <a href="/contact.html">Contact</a>
+                    <span>Gallery</span>
                 </nav>
                 <div id="sm-navbar-icon">
                     <img src="images/misc/menu.svg" alt="" height="32" onclick="SNavMenu()">    
                 </div>
             </div>
+
         </div>
     </header>
     <div id="header-notifs">
@@ -51,126 +52,35 @@
     <div id="sm-navbar" style="visibility: hidden">
         <a href="index.html">Home</a>
         <a href="/blog/index.html">Blog</a>
-        <span>About Us</span>
+        <a href="aboutus.html">About Us</a>
         <a href="sponsors.html">Sponsors</a>
-        <a href="contact.html">Contact</a>
-        <a href="/gallery.html">Gallery</a>
+        <a href="/contact.html">Contact</a>
+        <span>Gallery</span>
     </div>
-    <main class="aboutusMain">
-        <div class="parallax aboutUsParallaxImg">
+    <main>
+        <div class="parallax contactParallaxImg">
             <div id="parallax-text">
-                <h1 class="parallaxTextFadeIn">About Us</h1>
+                <h1 class="parallaxTextFadeIn">Gallery</h1>
                 <a id="call-to-scroll" href="#top-anchor"><img src="images/misc/down.svg">Click to scroll down</a>
             </div>
         </div>
         <div id="main-content">
-            <div class="aboutus-content">
-                <div id="top-anchor"></div>
-                <div class="aboutus-text">
-                    <h2>Our history</h2>
-                    <p>
-                        Our team is comprised of 3 team leads, 12 sub-team leads, and over 50 general members, all working toward the same goal of building a competitive, innovative, and reliable Formula SAE race car. Since its formation, the team has steadily grown in both size and capability, evolving into a well-structured and highly collaborative engineering organization.<br><br>
+            <div id="image-gallery">
+                <div id="image-gallery-header">
+                    <input type="text" name="gallery-searchbar" id="gallery-searchbar">
 
-                        Over the years, the team has refined its design and development processes, adopting industry-inspired workflows that emphasize iteration, validation, and performance-driven decision making. Each new generation of members builds upon the knowledge and experience of previous teams, continuously improving vehicle design, manufacturing techniques, and overall team efficiency.<br><br>
-
-                        The team's structure has also matured alongside its technical progress. What began as a small group of passionate students has developed into a multidisciplinary organization with clearly defined roles, responsibilities, and leadership systems. This evolution has enabled the team to take on increasingly complex engineering challenges while maintaining a strong focus on reliability and innovation.
-                    </p>
-
+                    <div id="image-gallery-filters">
+                        <input type="checkbox" name="ig-filter-2024" id="ig-filter-2024">
+                        <input type="checkbox" name="ig-filter-2025" id="ig-filter-2025">
+                        <input type="checkbox" name="ig-filter-2026" id="ig-filter-2026">
+                    </div>
+                    <!-- alan parsons project - let yourself go -->
                 </div>
-                <div class="aboutus-img">
-                    <img src="/images/media/main-content/image-20250928-153513-8916ac30.jpeg" alt="">
-                </div>
-            </div>
-
-            <hr>
-
-            <div id="team-leads">
-                <h1>Team Leads</h1>
-                <div id="tl-imgs">
-                    <div class="tl">
-                        <img src="images/team-members/boucherb.jpg" alt="" height="350">
-                        <h3>Brooklyn Boucher</h3>
-                        <p>Electrical</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/fasta.jpg" alt="" height="350">
-                        <h3>Andy Fast</h3>
-                        <p>Mechanical</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/karh.jpg" alt="" height="350">
-                        <h3>Hana Kar</h3>
-                        <p>Business</p>
-                    </div>
-                </div>
-            </div>
-            <div id="subteam-leads">
-                <h2>Subteam Leads</h2>
-                <div id="stl-imgs">
-                    <div class="tl">
-                        <img src="images/team-members/garciaja.jpg" alt="" height="350">
-                        <h3>Josh Andrei Garcia</h3>
-                        <p>Driver Interface</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/parentn.jpg" alt="" height="350">
-                        <h3>Noah Parent</h3>
-                        <p>Chassis</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/khajaf.jpg" alt="" height="350">
-                        <h3>Fahduddin Khaja</h3>
-                        <p>Embedded Systems & Software</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/kutsyllop.jpg" alt="" height="350">
-                        <h3>Philipp Kutsyllo</h3>
-                        <p>Aerodynamics</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/levesquej.jpg" alt="" height="350">
-                        <h3>Josh Levesque</h3>
-                        <p>Electronics</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/bertuccioa.jpg" alt="" height="350">
-                        <h3>Antonio Bertuccio</h3>
-                        <p>Suspension</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/francisb.jpg" alt="" height="350">
-                        <h3>Bennett Francis</h3>
-                        <p>Powertrain (Mechanical)</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/isshakt.jpg" alt="" height="350">
-                        <h3>Tony Isshak</h3>
-                        <p>Powertrain (Electrical)</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/gomezso.jpg" alt="" height="350">
-                        <h3>Simon Oliveros Gomez</h3>
-                        <p>Thermals</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/huynhk.jpg" alt="" height="350">
-                        <h3>Kevin Huynh</h3>
-                        <p>Tractive Battery (Electrical)</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/wilcoxr.jpg" alt="" height="350">
-                        <h3>Robert Wilcox</h3>
-                        <p>Tractive Battery (Mechanical)</p>
-                    </div>
-                    <div class="tl">
-                        <img src="images/team-members/stojakovicn.jpg" alt="" height="350">
-                        <h3>Nicole Stojakovic</h3>
-                        <p>Low Voltage & Integration</p>
-                    </div>
+                <div id="image-gallery-body">
+                    Looks like there are currently no images in the gallery.
                 </div>
             </div>
         </div>
-
     </main>
     <div id="header-trim"></div>
     <footer>
@@ -180,7 +90,6 @@
                 <div id="footer-contact-us">
                     <h3>Interested?</h3>
                     <p>Reach out through the form below.<br><br>
-                    
                         <a href="/contact.html#top-anchor">Link to Google Form</a>
                     </p>
                 </div>
@@ -219,6 +128,6 @@
     </footer>
     <script src="js/fouc-remedy.js"></script>
     <script src="js/SNav.js"></script>
-    <script src="/js/parallax-button.js"></script>
+    <script src="js/parallax-button.js"></script>
 </body>
 </html>

@@ -442,7 +442,7 @@ header {
     display: flex;
     justify-content: end;
     align-items: end;
-    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/image-20250914-123934-682abbfe.jpeg");
+    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/parallax/image-20250914-123934-682abbfe.jpeg");
     height: 100lvh;
     max-width: 100%;
     background-attachment: fixed;
@@ -647,7 +647,7 @@ footer {
 /* ABOUT US */
 
 .aboutUsParallaxImg {
-    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/DSC05929-pc.jpg");
+    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/parallax/DSC05929-pc.jpg");
     background-position: top;
     
 }
@@ -767,13 +767,13 @@ p:not(.tl > *) {
 /* COMMUNITY SUPPORT */
 
 .communitySupportParallaxImg {
-    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/DSC05952.jpg");
+    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/parallax/DSC05952.jpg");
 }
 
 /* SPONSORS */
 
 .sponsorsParallaxImg {
-    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/DSC05873.jpg");
+    background-image: linear-gradient(to right, #0000 0%, var(--auwin-davy) 100%), linear-gradient(to bottom, #0000 0%, var(--auwin-davy) 60%), url("../images/media/parallax/DSC05873.jpg");
     background-position: bottom;
 }
 
@@ -1113,6 +1113,21 @@ p:not(.tl > *) {
     min-height: 50px;
     /* width: 60%; */
     margin: 25px auto;
+}
+
+/* GALLERY */
+
+#image-gallery {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 10px;
+    padding: 50px;
+    background-color: #00f;
+
+    & > #image-gallery-body {
+        background-color: #0f0;
+    }
 }
 
 /* MEDIA QUERIES */
