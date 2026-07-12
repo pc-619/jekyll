@@ -13,12 +13,12 @@
     </style>
     <title>Gallery | UWindsor FSAE</title>
     <meta name="description" content="View UWindsor FSAE's image gallery documenting their illustrious history.">
-    <link rel="canonical" href="https://uwindsorfsae.ca/contact">
-    <meta property="og:title" content="Contact | UWindsor FSAE">
-    <meta property="og:description" content="Contact UWindsor FSAE for sponsor inquiries and recruitment.">
+    <link rel="canonical" href="https://uwindsorfsae.ca/gallery">
+    <meta property="og:title" content="Gallery | UWindsor FSAE">
+    <meta property="og:description" content="View UWindsor FSAE's image gallery documenting their illustrious history.">
     <meta property="og:image" content="https://uwindsorfsae.ca/images/misc/blog-post-cover.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uwindsorfsae.ca/contact">
+    <meta property="og:url" content="https://uwindsorfsae.ca/gallery">
     <meta name="robots" content="index, follow">
 </head>
 <body>
@@ -57,7 +57,7 @@
         <a href="/contact.html">Contact</a>
         <span>Gallery</span>
     </div>
-    <main>
+    <main id="gallery-page">
         <div class="parallax contactParallaxImg">
             <div id="parallax-text">
                 <h1 class="parallaxTextFadeIn">Gallery</h1>
@@ -65,19 +65,78 @@
             </div>
         </div>
         <div id="main-content">
+            <h1>Gallery</h1>
+            <div id="top-anchor"></div>
             <div id="image-gallery">
-                <div id="image-gallery-header">
-                    <input type="text" name="gallery-searchbar" id="gallery-searchbar">
-
-                    <div id="image-gallery-filters">
-                        <input type="checkbox" name="ig-filter-2024" id="ig-filter-2024">
-                        <input type="checkbox" name="ig-filter-2025" id="ig-filter-2025">
-                        <input type="checkbox" name="ig-filter-2026" id="ig-filter-2026">
-                    </div>
-                    <!-- alan parsons project - let yourself go -->
-                </div>
                 <div id="image-gallery-body">
-                    Looks like there are currently no images in the gallery.
+                    <div id="image-gallery-no-content">
+                        <img class="no-content-img" src="/images/misc/image-gallery-none.webp" alt="">
+                        <p>It looks like something went wrong.<br><br>Please make sure Javascript is enabled on this page, or check again at a different time.</p>
+                    </div>
+
+                    <!-- <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-1.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-2.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-3.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-1.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-1.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-2.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-3.png" alt="">
+                    </picture>
+                    <picture class="gallery-item">
+                        <img src="/images/media/gallery/test-1.png" alt="">
+                    </picture> -->
+                    <!-- <div class="image-gallery-page active pg-1">
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-1.png" alt="">
+                        </picture>
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-2.png" alt="">
+                        </picture>
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-3.png" alt="">
+                        </picture>
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-1.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="image-gallery-page pg-2">
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-2.png" alt="">
+                        </picture>
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-3.png" alt="">
+                        </picture>
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-1.png" alt="">
+                        </picture>
+                        <picture class="gallery-item">
+                            <img src="/images/media/gallery/test-2.png" alt="">
+                        </picture>
+                    </div> -->
+                </div>
+                <div id="image-gallery-enlarged">
+                    <img src="/images/misc/cross.svg" alt="" class="image-gallery-closebtn">
+                    <img id="img01" class="modal-img">
+                </div>
+                <div id="image-gallery-pagination">
+                    <button class="image-gallery-controls" onclick="displayPage(-1)">&lt;&nbsp;&lt;</button>
+                    <div id="image-gallery-numPages">
+                        <!-- <button class="image-gallery-option">1</button> -->
+                    </div>
+                    <button class="image-gallery-controls" onclick="displayPage(1)">&gt;&nbsp;&gt;</button>
                 </div>
             </div>
         </div>
@@ -126,8 +185,9 @@
 
         </div>
     </footer>
-    <script src="js/fouc-remedy.js"></script>
+    <!-- <script src="js/fouc-remedy.js"></script> -->
     <script src="js/SNav.js"></script>
     <script src="js/parallax-button.js"></script>
+    <script src="js/pagination.js"></script>
 </body>
 </html>

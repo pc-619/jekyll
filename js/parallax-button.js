@@ -1,3 +1,5 @@
+document.querySelector("body").style.overflowX = "hidden";
+
 window.onload = function () {
     this.document.body.classList.add("fadeIn");
     this.document.body.style.visibility = "visible";
@@ -5,5 +7,5 @@ window.onload = function () {
     const scroller = document.getElementById("call-to-scroll");
     setTimeout(() => {
         scroller.classList.add("parallaxTextFadeIn");
-    }, 2500);
+    }, 1500);
 }
