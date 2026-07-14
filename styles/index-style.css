@@ -472,6 +472,9 @@ header {
     border: 0;
     box-shadow: none;
 }
+#parallax-text > h1, #parallax-text > h6 {
+    transform: translateX(-10000%);
+}
 #parallax-text > h6 {
     margin-top: -10px;
 }
@@ -481,7 +484,7 @@ header {
     margin-left: auto;
     width: max-content;
     font-size: 67%;
-    transform: translateX(10000%);
+    transform: translateX(-10000%);
     font-weight: bold;
 }
 #parallax-text > a > img {
@@ -1519,8 +1522,8 @@ p:not(.tl > *) {
         margin: 0;
         width: 100vw;
         left: 0;
-        /* bottom: 0; */
-        /* border-bottom: none; */
+        bottom: 0; */
+        /* border-bottom: none;
         & #igp-head, #igp-body {
             display: flex;
             justify-content: space-between;

@@ -58,7 +58,7 @@
 @keyframes parallaxTextFadeIn {
     from {
         opacity: 0;
-        transform: translateX(20%);
+        transform: translateX(0%);
     }
     to {
         opacity: 1;
@@ -98,7 +98,7 @@
 }
 
 .parallaxTextFadeIn {
-    animation: 2.5s parallaxTextFadeIn forwards;
+    animation: 2.5s parallaxTextFadeIn 1s forwards;
 }
 
 .infiniRotate {
