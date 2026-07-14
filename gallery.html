@@ -64,79 +64,34 @@
                 <a id="call-to-scroll" href="#top-anchor"><img src="images/misc/down.svg">Click to scroll down</a>
             </div>
         </div>
-        <div id="main-content">
-            <h1>Gallery</h1>
-            <div id="top-anchor"></div>
-            <div id="image-gallery">
-                <div id="image-gallery-body">
-                    <div id="image-gallery-no-content">
-                        <img class="no-content-img" src="/images/misc/image-gallery-none.webp" alt="">
-                        <p>It looks like something went wrong.<br><br>Please make sure Javascript is enabled on this page, or check again at a different time.</p>
-                    </div>
 
-                    <!-- <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-1.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-2.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-3.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-1.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-1.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-2.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-3.png" alt="">
-                    </picture>
-                    <picture class="gallery-item">
-                        <img src="/images/media/gallery/test-1.png" alt="">
-                    </picture> -->
-                    <!-- <div class="image-gallery-page active pg-1">
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-1.png" alt="">
-                        </picture>
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-2.png" alt="">
-                        </picture>
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-3.png" alt="">
-                        </picture>
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-1.png" alt="">
-                        </picture>
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <h1>Gallery</h1>
+                <div id="top-anchor"></div>
+                <div id="image-gallery">
+                    <div id="image-gallery-body">
+                        <div id="image-gallery-no-content">
+                            <img class="no-content-img" src="/images/misc/image-gallery-none.webp" alt="">
+                            <p>It looks like something went wrong.<br><br>Please make sure Javascript is enabled on this page or check again at a different time.</p>
+                        </div>
                     </div>
-                    <div class="image-gallery-page pg-2">
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-2.png" alt="">
-                        </picture>
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-3.png" alt="">
-                        </picture>
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-1.png" alt="">
-                        </picture>
-                        <picture class="gallery-item">
-                            <img src="/images/media/gallery/test-2.png" alt="">
-                        </picture>
-                    </div> -->
-                </div>
-                <div id="image-gallery-enlarged">
-                    <img src="/images/misc/cross.svg" alt="" class="image-gallery-closebtn">
-                    <img id="img01" class="modal-img">
-                </div>
-                <div id="image-gallery-pagination">
-                    <button class="image-gallery-controls" onclick="displayPage(-1)">&lt;&nbsp;&lt;</button>
-                    <div id="image-gallery-numPages">
-                        <!-- <button class="image-gallery-option">1</button> -->
+                    <div id="image-gallery-enlarged">
+                        <div id="load-text">Loading...</div>
+                        <img id="img01" class="modal-img">
                     </div>
-                    <button class="image-gallery-controls" onclick="displayPage(1)">&gt;&nbsp;&gt;</button>
+                    <div id="image-gallery-pagination" class="hidden">
+                        <div id="igp-head">
+                            <button class="image-gallery-controls igctrl-left greyout" onclick="displayPage(-2)" disabled>&lt;&nbsp;&lt;</button>
+                            <div id="image-gallery-numPages">
+                                <!-- <button class="image-gallery-option pg-23">&hellip;</button> -->
+                            </div>
+                            <button class="image-gallery-controls igctrl-right" onclick="displayPage(-1)">&gt;&nbsp;&gt;</button>
+                        </div>
+                        <div id="igp-body">
+                            <span class="page-counter">dwad</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
